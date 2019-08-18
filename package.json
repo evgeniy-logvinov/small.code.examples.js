@@ -1,0 +1,27 @@
+{
+    "name": "small.code.examples",
+    "version": "1.0.0",
+    "description": "examples with pure code",
+    "main": "index.js",
+    "directories": {
+        "example": "examples"
+    },
+    "scripts": {
+        "hello": "node examples/hello.world/",
+        "comment": "node examples/comment/",
+        "variable": "node examples/variable/",
+        "dataTypes": "node examples/dataTypes/",
+        "typeConvertion": "node examples/typeConvertion/",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/evgeniy-logvinov/small.code.examples.js.git"
+    },
+    "author": "evgeniy.logvinov.k",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/evgeniy-logvinov/small.code.examples.js/issues"
+    },
+    "homepage": "https://github.com/evgeniy-logvinov/small.code.examples.js#readme"
+}
