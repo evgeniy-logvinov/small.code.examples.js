@@ -1,5 +1,7 @@
 'use strict';
 
+let lib = require('./lib');
+
 function showMessage() {
     console.log('Hello world');
 }
@@ -35,33 +37,14 @@ function showNameWithDefaultNameFromFunc(name = defaultName()) {
 showNameWithDefaultName();
 showNameWithDefaultNameFromFunc();
 
-function min(a, b) {
-    return a > b ? b : a;
-}
-
 console.log('min ->>>');
-console.log('min(2, 5)', min(2, 5));
-console.log('min(3, -1)', min(3, -1));
-console.log('min(1, 1)', min(1, 1));
+console.log('min(2, 5)', lib.min(2, 5));
+console.log('min(3, -1)', lib.min(3, -1));
+console.log('min(1, 1)', lib.min(1, 1));
 
-function pow(a, b) {
-    let res = a;
-
-    if (b < 0) {
-        throw new Error('b can be only > 0');
-    }
-
-    while (b - 1) {
-        res = res * a;
-        b--;
-    }
-
-    return res;
-}
-
-console.log('pow ->>>');
-console.log('pow(2, 4)', pow(2, 4));
-console.log('pow(4, 4)', pow(4, 4));
+console.log('pow --->')
+console.log('pow(2, 4)', lib.pow(2, 4));
+console.log('pow(4, 4)', lib.pow(4, 4));
 
 const yes = function () {
     console.log('Yes');

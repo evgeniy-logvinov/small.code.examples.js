@@ -7,17 +7,18 @@
         "example": "examples"
     },
     "scripts": {
-        "hello": "node examples/hello.world/",
-        "comment": "node examples/comment/",
-        "variable": "node examples/variable/",
-        "dataTypes": "node examples/dataTypes/",
-        "typeConvertion": "node examples/typeConvertion/",
-        "compare": "node examples/compare/",
-        "conditions": "node examples/conditions/",
-        "operators": "node examples/operators/",
-        "cycles": "node examples/cycles/",
-        "functions": "node examples/functions/",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "hello": "node examples/basics/hello.world/",
+        "comment": "node examples/basics/comment/",
+        "variable": "node examples/basics/variable/",
+        "dataTypes": "node examples/basics/dataTypes/",
+        "typeConvertion": "node examples/basics/typeConvertion/",
+        "compare": "node examples/basics/compare/",
+        "conditions": "node examples/basics/conditions/",
+        "operators": "node examples/basics/operators/",
+        "cycles": "node examples/basics/cycles/",
+        "functions": "node examples/basics/functions/",
+        "fields": "node examples/objects/fields/",
+        "test": "mocha"
     },
     "repository": {
         "type": "git",
@@ -28,5 +29,8 @@
     "bugs": {
         "url": "https://github.com/evgeniy-logvinov/small.code.examples.js/issues"
     },
-    "homepage": "https://github.com/evgeniy-logvinov/small.code.examples.js#readme"
+    "homepage": "https://github.com/evgeniy-logvinov/small.code.examples.js#readme",
+    "devDependencies": {
+        "mocha": "^6.2.0"
+    }
 }
