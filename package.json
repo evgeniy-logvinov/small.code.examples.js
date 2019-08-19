@@ -13,7 +13,9 @@
         "dataTypes": "node examples/dataTypes/",
         "typeConvertion": "node examples/typeConvertion/",
         "compare": "node examples/compare/",
+        "conditions": "node examples/conditions/",
         "operators": "node examples/operators/",
+        "cycles": "node examples/cycles/",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
