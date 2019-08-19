@@ -12,6 +12,8 @@
         "variable": "node examples/variable/",
         "dataTypes": "node examples/dataTypes/",
         "typeConvertion": "node examples/typeConvertion/",
+        "compare": "node examples/compare/",
+        "operators": "node examples/operators/",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
