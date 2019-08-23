@@ -13,22 +13,29 @@ const user = new User('Jon')
 console.log('name', user.name);
 console.log('isAdmin', user.isAdmin);
 
-function getJon() {
+function Jon() {
     this.name = 'T-1000';
     return { name: 'Jon' };
 }
 
-function getSara() {
+function Sara() {
     this.name = 'Sata';
     return;
 }
 
-const jon = new getJon();
+const jon = new Jon();
 console.log(jon.name);
-const sara = new getSara();
+const sara = new Sara();
 console.log(sara.name);
-const newJon = new getJon;
+const newJon = new Jon;
 console.log(newJon.name, '<-- bad');
+
+try {
+    const newJonUndef = Jon();
+    console.log(newJonUndef.name, '<-- undef');
+} catch (err) {
+    console.log('get error when we try create object useing Jon() without new. New is undefined');
+}
 
 const terminator = new User('T-1000')
 terminator.sayHi();
@@ -70,3 +77,14 @@ const accumulator = new Accumulator(12);
 accumulator.read('2');
 accumulator.read('4');
 console.log(accumulator.value);
+
+function Horse(name) {
+    if (!new.target) {
+        return new Horse(name);
+    }
+
+    this.name = name;
+}
+
+let horse = Horse("Javascript");
+console.log(horse.name);
