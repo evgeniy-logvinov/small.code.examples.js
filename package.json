@@ -21,6 +21,8 @@
         "objectFunc": "node examples/objects/functions",
         "objectThis": "node examples/objects/this",
         "objectConstructor": "node examples/objects/constructor",
+        "dataTypesPrimitives": "node examples/dataTypes/primitives",
+        "dataTypesNumbers": "node examples/dataTypes/numbers",
         "test": "mocha"
     },
     "repository": {
