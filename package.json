@@ -36,6 +36,6 @@
     },
     "homepage": "https://github.com/evgeniy-logvinov/small.code.examples.js#readme",
     "devDependencies": {
-        "mocha": "^6.2.0"
+        "mocha": "^10.2.0"
     }
 }
